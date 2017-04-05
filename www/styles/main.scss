@@ -1,0 +1,56 @@
+@import './pages/pages.scss';
+
+// import from bower, look at the sass gulp-tasks
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 1rem;
+	font-family: 'Arial', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	background: #CFD8DC;
+}
+
+.welcoming {
+	position: absolute;
+	max-width: 465px;
+	top: 50%;
+	left: 50%;
+	padding: 45px;
+	color: #212121;
+	text-align: center;
+	border-bottom: 2px solid #C9C9C9;
+	background: #FFFFFF;
+
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+	
+	h1 {
+		font-size: 40px;
+		font-weight: bold;
+	}
+
+	p {
+		font-size: 16px;
+		color: #727272;
+		word-wrap: break-word;
+	}
+
+	a {
+		padding: 2px 4px;
+		color: #03A9F4;
+		text-decoration: none;
+
+		&:hover {
+			color: darken(#03A9FA, 10%);
+		}
+	}
+}
+

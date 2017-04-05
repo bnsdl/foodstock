@@ -1,0 +1,6 @@
+{
+	"src": "www/",
+	"dist": "dist/",
+	"img": "assets/images/",
+	"port": 9004
+}
