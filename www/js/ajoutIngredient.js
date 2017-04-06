@@ -1,16 +1,3 @@
-$(document).ready(function(){
-<<<<<<< HEAD
-=======
-    $('#setSotck').click(
-    function onSubmit(event) {
-        event.preventDefault();
-        var produits = $('#produits').val();
-        var poids = $('#poids').val();
-        var codeBarre = $('#codeBarre').val();
->>>>>>> 4a1bec30681fd212aad93f9cfec6601251d0cb6c
-
-});
-
 function setStock() {
     var banane = {
         "Nom": "Banane",
@@ -58,7 +45,6 @@ function setStock() {
         "Poids": "260g"
     };
 
-
     localStorage.setItem("banane", JSON.stringify(banane));
     localStorage.setItem("pate", JSON.stringify(pate));
     localStorage.setItem("farine", JSON.stringify(farine));
@@ -70,4 +56,27 @@ function setStock() {
     localStorage.setItem("pateAPizza", JSON.stringify(pateAPizza));
 
     alert("Votre liste de course a bien été prise en compte !");
+}
+
+
+function ajout(){
+
+    console.log("la");
+    var produits = $('#produits').val();
+    var poids = $('#poids').val();
+    var codeBarre = $('#quantite').val();
+
+    var produitInfo = {
+        'Nom': produits,
+        'Quantite': codeBarre,
+        'Poids': poids
+    };
+
+    localStorage.setItem('test', JSON.stringify(produitInfo));
+
+    alert("Votre produit a bien été ajouté");
+
+    $('#produits').val("");
+    $('#poids').val("");
+    $('#quantite').val("");
 }
