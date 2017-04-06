@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="css/inscription.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <title>Document</title>
+
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper beige-perso">
+            <a href="index.html" style="color:grey"><</a>
+            <img src="img/logo-SF.png" alt="Logo" class="brand-logo" width="50" height="50" style="padding: 2px">
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6" >
+                        <input placeholder="Prénom" id="prenom" type="text" class="validate"/>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="nom" type="text" placeholder="Nom" class="validate"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <p>
+                            <input name="group1" type="radio" id="femme" class="radio-bege radio-bege-border" />
+                            <label for="femme">Femme</label>
+                        </p>
+                    </div>
+                    <div class="input-field col s6 ">
+                        <p>
+                            <input name="group1" type="radio" id="homme" class="radio-bege radio-bege-border"/>
+                            <label for="homme">Homme</label>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="motDePasse" type="password" placeholder="Mot de passe" class="validate"/>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <input id="confirmezMotDePasse" type="password" placeholder="Confirmez mot de passe" class="validate"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate" data-error="wrong" data-success="right" placeholder="Votre adresse e-mail">
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="confirmezEmail" type="email" class="validate" data-error="wrong" data-success="right" placeholder="Confirmez votre adresse e-mail">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field center-align col s6">
+                        <button type="button" name="nom" value="Retour" class="btn bege-perso">Retour</button>
+                    </div>
+                    <div class="input-field center-align col s6">
+                        <a href="index.html"><button type="button" name="nom" value="Valider" class="btn bege-perso">Valider</button></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

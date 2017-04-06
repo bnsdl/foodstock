@@ -1,4 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function () {
+    setStock();
+    getStock();
 
 });
 
@@ -6,7 +8,7 @@ function setStock() {
     var banane = {
         "Nom": "Banane",
         "Quantite": "2",
-        "Poids": "100gr"
+        "Poids": ""
     };
     var pate = {
         "Nom": "Pâtes",
@@ -40,7 +42,7 @@ function setStock() {
     };
     var olive = {
         "Nom": "Olives noires",
-        "Quantite": "N/R",
+        "Quantite": "",
         "Poids": "50g"
     };
     var pateAPizza = {
@@ -59,6 +61,21 @@ function setStock() {
     localStorage.setItem("champignon", JSON.stringify(champignon));
     localStorage.setItem("olive", JSON.stringify(olive));
     localStorage.setItem("pateAPizza", JSON.stringify(pateAPizza));
+}
 
-    alert("Votre liste de course a bien été prise en compte !");
+function getStock() {
+
+    var nbElement = localStorage.length;
+    var nom;
+    var quantite;
+    var poids;
+    var content;
+
+    for ( var i = 0; i < nbElement; i++ ) {
+        nom = JSON.parse(localStorage.getItem(localStorage.key(i))).Nom;
+        quantite = JSON.parse(localStorage.getItem(localStorage.key(i))).Quantite;
+        poids = JSON.parse(localStorage.getItem(localStorage.key(i))).Poids;
+        content = '<li class=" collection-item ">' + nom + ' - ' + quantite + ' - ' + poids + '</li>';
+        $(content).appendTo("#stock");
+    }
 }
