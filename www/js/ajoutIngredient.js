@@ -1,4 +1,13 @@
 $(document).ready(function(){
+<<<<<<< HEAD
+=======
+    $('#setSotck').click(
+    function onSubmit(event) {
+        event.preventDefault();
+        var produits = $('#produits').val();
+        var poids = $('#poids').val();
+        var codeBarre = $('#codeBarre').val();
+>>>>>>> 4a1bec30681fd212aad93f9cfec6601251d0cb6c
 
 });
 
